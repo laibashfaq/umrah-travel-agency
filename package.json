@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "npm run build -w @umrah/shared && npm run build -w @umrah/api && npm run build -w @umrah/web",
+    "start": "npm run db:deploy && npm run start -w @umrah/api",
     "build:shared": "npm run build -w @umrah/shared",
     "dev:api": "npm run start:dev -w @umrah/api",
     "dev:web": "npm run dev -w @umrah/web",
